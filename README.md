@@ -16,7 +16,7 @@ Ao clicar nos botões você poderá ver uma série de artes e seus respectivos a
 As técnicas e tecnologias utilizadas pra isso são:
 
 - `Jetpack Compose`
-- `Layouts` e : Column, Row e Card
+- `Layouts`: Column, Row e Card
 - `Components`: Text, Images e Buttons
 - `Modifiers`
 - `State`
