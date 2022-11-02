@@ -3,20 +3,21 @@ package com.example.artspace
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.Button
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
-import androidx.compose.material.Text
+import androidx.compose.material.*
+import androidx.compose.material.SnackbarDefaults.backgroundColor
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -61,7 +62,7 @@ fun ArtSpaceApp() {
             ArtistInfo(modifier = Modifier)
             Spacer(modifier = Modifier.height(16.dp))
             NextAndPreviousButton(modifier = Modifier)
-            
+
         }
 
 
@@ -73,46 +74,56 @@ fun ArtSpaceApp() {
 fun Picture(
     modifier: Modifier = Modifier
 ) {
-    Box {
-        Spacer(modifier = Modifier
-            .matchParentSize()
-            .border(
-                width = 2.dp,
-                color = Color.DarkGray,
-                shape = RoundedCornerShape(5.dp)
+    Card(
+        elevation = 4.dp,
+        backgroundColor = MaterialTheme.colors.background,
+        modifier = Modifier.border(
+            width = 4.dp,
+            shape = RoundedCornerShape(5.dp),
+            color = Color.Gray
+        )
+    ) {
+        Column(Modifier.padding(16.dp)) {
+            Image(
+                painter = painterResource(R.drawable.original),
+                contentDescription = "Exemplo",
+                modifier = Modifier
+                    .padding(32.dp)
             )
-        )
-        Image(
-            painter = painterResource(R.drawable.original),
-            contentDescription = "Exemplo",
-            modifier = Modifier
-                .padding(24.dp)
-        )
+        }
     }
 }
 
 @Composable
 fun ArtistInfo(modifier: Modifier) {
-    Column(
+    Card(
+        elevation = 4.dp,
+        backgroundColor = MaterialTheme.colors.background
     ) {
-        Text("Artwork Title", fontSize = 24.sp)
-        Text("Artwork Artist (year)")
+        Column(modifier = Modifier
+            .padding(16.dp)
+        ) {
+            Text("Artwork Title", fontSize = 28.sp, fontWeight = FontWeight.Light)
+            Text("Artwork Artist (year)", fontSize = 16.sp, fontWeight = FontWeight.Bold)
+        }
     }
 }
 
 @Composable
-fun NextAndPreviousButton(modifier: Modifier){
+fun NextAndPreviousButton(modifier: Modifier) {
     Row(
         modifier = Modifier.fillMaxWidth()
     ) {
-        Button(onClick = { /*TODO*/ },
+        Button(
+            onClick = { /*TODO*/ },
             modifier = Modifier
                 .weight(1f)
                 .padding(start = 16.dp, end = 8.dp)
         ) {
             Text(text = "Previous")
         }
-        Button(onClick = { /*TODO*/ },
+        Button(
+            onClick = { /*TODO*/ },
             modifier = Modifier
                 .weight(1f)
                 .padding(end = 16.dp, start = 8.dp)
