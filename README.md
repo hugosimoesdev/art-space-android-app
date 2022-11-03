@@ -9,7 +9,7 @@ Desafio de conclusão da [Unit 2](https://developer.android.com/courses/android-
 
 Ao clicar nos botões você poderá ver uma série de artes e seus respectivos artistas.
 
-![](https://user-images.githubusercontent.com/58408758/199764573-aefcf44b-2f40-4301-9e15-f7319d165b7b.mp4)
+![](https://user-images.githubusercontent.com/58408758/199764930-7d977d9f-8098-417b-984b-4b0bd5a65654.mp4)
 
 ## ✔️ Técnicas e tecnologias utilizadas
 
