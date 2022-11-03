@@ -9,7 +9,7 @@ Desafio de conclusão da [Unit 2](https://developer.android.com/courses/android-
 
 Ao clicar nos botões você poderá ver uma série de artes e seus respectivos artistas.
 
-![](https://developer.android.com/static/codelabs/basic-android-kotlin-compose-art-space/img/6c9686e5029f55c9.gif)
+![](https://user-images.githubusercontent.com/58408758/199764573-aefcf44b-2f40-4301-9e15-f7319d165b7b.mp4)
 
 ## ✔️ Técnicas e tecnologias utilizadas
 
