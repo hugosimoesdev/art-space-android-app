@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Art Space</string>
+    <string name="ababoru">Ababoru</string>
+    <string name="tarsila_do_amaral_1928">Tarsila do Amaral - 1928</string>
+    <string name="operarios">Operários</string>
+    <string name="tarsila_do_amaral_1933">Tarsila do Amaral - 1933</string>
+    <string name="la_rentree">La rentrée</string>
+    <string name="anita_malfatti">Anita Malfatti - 1927</string>
+    <string name="o_lavrador_de_cafe">O Lavrador de Café</string>
+    <string name="candido_portinari">Candido Portinari - 1934</string>
+    <string name="samba">Samba</string>
+    <string name="di_cavalcanti">Di Cavalcanti - 1925</string>
 </resources>
